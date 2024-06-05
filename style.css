@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw; /* Adjusted to fit all content horizontally */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.content {
+    min-width: 100vw;
+    height: 100vh;
+    display: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #18181b;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+.content nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5.5rem 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content .nav-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.content .nav-logo a{
+    position: absolute;
+    top: 1.85rem;
+    left: 19rem;
+}
+
+.content .nav-link .link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content .nav-link .link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.content .nav-link .link a:hover::after {
+    width: 70%;
+}
+
+.content .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #1e40af;
+}
+
+.content .text {
+    max-width: 1200px;
+    margin: auto;
+    padding: 9rem 1px;
+}
+
+.content .text1 {
+    max-width: 1200px;
+    margin: auto;
+    
+    padding: 1.5rem 1px;
+}
+
+.content .content1 .blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+.content header{
+    position: relative;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.content header h4 {
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.content header .content1 h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.content header .content1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.content header .content1 p {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.content .images {
+    position: absolute;
+    top: 290px;
+    left: 45%;
+    transform: translateX(45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content .header {
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.introduction {
+    margin-right: 10rem; 
+    margin-left: 10rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 13rem;
+}
+
+.introduction .card {
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.introduction .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.introduction .card span {
+    display: inline-block;
+    background-color: #1d40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.introduction .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.introduction .card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+
+}
+
+.introduction .card a {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.introduction .card a:hover {
+    color: #1d40af;
+}
+
+
+.sub-header {   
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.priceing {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.priceing .card{
+    padding: 2rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.priceing .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.priceing .card .content1 {
+    flex: 1;
+    margin-bottom: 1.7rem;
+}
+
+.priceing .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.priceing .card h3 {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.priceing .card p {
+    margin-bottom: 0rem;
+    color: #ccc;
+}
+
+.priceing .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.priceing .card button:hover {
+    background-color: #1d40af;
+    border-color: #1d40af;
+}
+
+.about {
+    margin-right: 10rem; 
+    margin-left: 10rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 1rem;
+}
+
+.about .card {
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.about .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.about .card span {
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.about .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.about .card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+
+}
+
+.about .card a {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.about .card a:hover {
+    color: #4faef7;
+}
